@@ -58,7 +58,7 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   // write your code here
-  if (typeOf(cardNumber) === null || undefined) {
+  if (typeof(cardNumber) === null || undefined) {
     return "Sorry, we don't have a credit card on file for you."
 } else {
   cart = [];
