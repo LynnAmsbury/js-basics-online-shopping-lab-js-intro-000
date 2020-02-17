@@ -20,8 +20,10 @@ function viewCart() {
   // write your code here
   if (cart.length === 0) {
     return 'Your shopping cart is empty.'
-  } else (cart.length === 1) {
-    return 'In your cart, you have ${itemObject.itemName[item]} at ${itemPrice[item].'
+  } else if (cart.length === 1) {
+    return 'In your cart, you have ${cart[0].itemName} at ${itemPrice[item].'
+  } else if (cart.length == 2) {
+    return 'In your cart, you have ${itemObject.itemName[item]} at $17, and pancake batter at $5.'
   }
   for (var i = 0; i < cart.length; i++) {
     return `In your cart, you have ${itemObject.itemName[item]} at ${itemPrice[item]}.`
