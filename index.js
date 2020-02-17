@@ -65,7 +65,7 @@ function placeOrder(cardNumber) {
     cart = [];
   }
 }
-placeOrder();
+placeOrder(83296759);
 
 // function placeOrder(cardNumber) {
 //   // write your code here
