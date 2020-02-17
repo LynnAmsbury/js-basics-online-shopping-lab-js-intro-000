@@ -45,13 +45,13 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  let removed = cart.splice(i, 1);
   for (var i = 0; i < cart.length; i++) {
     if (item === cart[i].itemName) {
       cart.splice(i, 1); // Removes 1 item at index i
       return cart;
-    } else {
-      return 'That item is not in your cart.'
-    }
+      return removed;
+    } 
   }
 }
 
