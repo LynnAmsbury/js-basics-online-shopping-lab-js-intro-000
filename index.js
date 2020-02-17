@@ -27,7 +27,7 @@ function viewCart() {
   } else {
     var moreThanTwoItems = 'In your cart, you have '
     for (var i = 0; i < cart.length - 1; i++) {
-      myString = myString + `${cart[i].itemName} at $${cart[i].itemPrice}, `
+      moreThanTwoItems = moreThanTwoItems + `${cart[i].itemName} at $${cart[i].itemPrice}, `
     }
   }
 }
