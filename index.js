@@ -18,6 +18,9 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  for (var i = 0; i < cart.length; i++) {
+    return `In your cart, you have ${itemObject.itemName[item]} at ${itemPrice[item]}.`
+  }
 }
 
 function total() {
