@@ -58,7 +58,7 @@ function removeFromCart(item) {
 // let removed = myFish.splice(3, 1)
 
 // removed is ["mandarin"]
-// myFish is ["angel", "clown", "drum", "sturgeon"] 
+// myFish is ["angel", "clown", "drum", "sturgeon"]
 
 function placeOrder(cardNumber) {
   // write your code here
