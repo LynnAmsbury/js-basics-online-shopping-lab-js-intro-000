@@ -43,6 +43,14 @@ function total() {
   return total;
 }
 
+function total() {
+  total = 0;
+  for(var i = 0; i < cart.length; i++) {
+    total += cart[i].itemPrice;
+  }
+  return total;
+}
+
 function removeFromCart(item) {
   // write your code here
   for (var r = 0; r < cart.length; r++) {
