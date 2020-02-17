@@ -47,11 +47,18 @@ function removeFromCart(item) {
   // write your code here
   for (var i = 0; i < cart.length; i++) {
     if (item === cart[i].itemName) {
-      cart.splice(i, 1); // Removes 1 item at index i
+      let removed = cart.splice(i, 1); // Removes 1 item at index i
       return cart;
+      return removed;
     }
   }
 }
+
+// let myFish = ['angel', 'clown', 'drum', 'mandarin', 'sturgeon']
+// let removed = myFish.splice(3, 1)
+
+// removed is ["mandarin"]
+// myFish is ["angel", "clown", "drum", "sturgeon"] 
 
 function placeOrder(cardNumber) {
   // write your code here
