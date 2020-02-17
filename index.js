@@ -65,8 +65,8 @@ function placeOrder(cardNumber) {
     //   }
     cart = [];
     } else
-      console.log('Sorry, we don\'t have a credit card on file for you.')
-return cart;
-  }
+      {console.log('Sorry, we don\'t have a credit card on file for you.')
+      return cart;}
+}
 
 placeOrder();
