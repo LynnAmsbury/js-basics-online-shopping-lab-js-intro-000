@@ -30,6 +30,7 @@ function viewCart() {
       moreThanTwoItems = moreThanTwoItems + `${cart[i].itemName} at $${cart[i].itemPrice}, `
     }
     return moreThanTwoItems + `and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}.`
+    // Note: cart.length - 1 accounts for the index of the first item being 0
   }
 }
 
