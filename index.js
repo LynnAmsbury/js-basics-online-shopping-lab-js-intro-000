@@ -65,7 +65,7 @@ function placeOrder(cardNumber) {
     return "Sorry, we don't have a credit card on file for you."
   }
 }
-console.log(placeOrder());
+console.log(placeOrder(1));
 
 // function placeOrder(cardNumber) {
 //   // write your code here
