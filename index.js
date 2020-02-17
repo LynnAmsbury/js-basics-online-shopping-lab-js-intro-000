@@ -34,22 +34,22 @@ function viewCart() {
   }
 }
 
-// function total() {
-//   // write your code here
-//   var total = 0;
-//   for (t = 0; t < cart.length; t++) {
-//     total += cart[t].itemPrice;
-//   }
-//   return total;
-// }
-
 function total() {
-  total = 0;
-  for(var i = 0; i < cart.length; i++) {
-    total += cart[i].itemPrice;
+  // write your code here
+  var total = 0;
+  for (t = 0; t < cart.length; t++) {
+    total += cart[t].itemPrice;
   }
   return total;
 }
+
+// function total() {
+//   total = 0;
+//   for(var i = 0; i < cart.length; i++) {
+//     total += cart[i].itemPrice;
+//   }
+//   return total;
+// }
 
 function removeFromCart(item) {
   // write your code here
