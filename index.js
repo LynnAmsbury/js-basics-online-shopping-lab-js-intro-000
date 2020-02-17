@@ -51,7 +51,7 @@ function removeFromCart(item) {
       cart.splice(i, 1); // Removes 1 item at index i
       return cart;
       return removed;
-    } 
+    }
   }
 }
 
