@@ -47,9 +47,8 @@ function removeFromCart(item) {
   // write your code here
   for (var i = 0; i < cart.length; i++) {
     if (item === cart[i].itemName) {
-      let removed = cart.splice(i, 1); // Removes 1 item at index i
+      cart.splice(i, 1); // Removes 1 item at index i
       return cart;
-      return removed;
     }
   }
 }
