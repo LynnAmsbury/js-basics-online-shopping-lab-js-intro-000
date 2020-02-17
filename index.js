@@ -56,28 +56,28 @@ function removeFromCart(item) {
   }
 }
 
-function placeOrder(cardNumber) {
-  // write your code here
-  if(cardNumber){
-    return `Your total cost is ${total()}, which will be charged to the card ${cardNumber}.`
-    cart.splice(0, cart.length);
+function placeOrder(creditCard) {
+  if (!creditCard) {
+    console.log("We don't have a credit card on file for you to place your order.");
   } else {
-    return "Sorry, we don't have a credit card on file for you."
+    console.log("Your total cost is $" + total() + ", which will be charged to the card " + creditCard + ".");
+    cart = [];
   }
 }
-console.log(placeOrder(1));
 
 // function placeOrder(cardNumber) {
 //   // write your code here
-//   if (!cardNumber) {
-//     console.log("Sorry, we don't have a credit card on file for you.")
+//   if(cardNumber){
+//     return `Your total cost is ${total()}, which will be charged to the card ${cardNumber}.`
+//     cart.splice(0, cart.length);
+//   } else {
+//     return "Sorry, we don't have a credit card on file for you."
 //   }
-//   console.log(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`)
-//   cart = [];
 // }
+// console.log(placeOrder(1));
 
 // function placeOrder(cardNumber) {
-//
+// 
 //   if (typeof(cardNumber) === "undefined"){
 //     return "Sorry, we don't have a credit card on file for you."
 //   } else {
